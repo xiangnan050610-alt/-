@@ -1,0 +1,4 @@
+interface:
+  display_name: "MiniMax H3 Prompting"
+  short_description: "Create precise H3 T2V, I2V and R2V prompts"
+  default_prompt: "Use $minimax-h3-prompting to turn this video idea into a production-ready MiniMax H3 prompt."
