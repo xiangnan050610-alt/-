@@ -68,6 +68,12 @@ Load *parts* of files, not whole files. The four largest references — `failure
 | Horror / comedy / commercial / vertical / any genre framing | any | `references/genre-playbooks.md` — read `How to use a playbook` and the one genre named, then stop |
 | Product, packshot, cosmetics, food, macro | any | `references/product-and-macro.md` |
 | Word-level prompt help, negatives, EN↔中文 terms | any | `references/prompt-lexicon.md` — read the conversion procedure and the one bank or table you need, then stop |
+| Premise, theme, logline, "what is this story really about?" | A→B | `references/story-development-and-short-drama.md` — premise/theme/controlling idea and logline tests |
+| Character inner conflict, desire vs false belief, character arc | A→B | `references/story-development-and-short-drama.md` — desire, misbelief, origin event, change arc |
+| Dialogue rewrite, subtext, voice differentiation, scene turn | A/H | `references/story-development-and-short-drama.md`, then `references/sound-and-dialogue.md` if audio delivery is needed |
+| Series / episode structure, A/B/C plots, cliffhangers, season engine | A→B | `references/story-development-and-short-drama.md` — episodic and season architecture |
+| Vertical short drama, retention beats, hook / reveal / end button | A→B→D | `references/story-development-and-short-drama.md`, then the existing shot plan and genre playbook |
+| AI short-drama production handoff / locked decisions | full pass | `references/story-development-and-short-drama.md` plus existing `references/production-workflow.md` |
 | Scheduling, retries, versioning, handoff, "how do I run this" | any | `references/production-workflow.md` |
 
 Modes combine, but chaining is opt-in, not automatic. Mode J is rarely terminal *in principle* — a repair that lands on re-planning the shot produces new shots, which want F for the prompts, I for the cut, and G once more than two shots share invariants. Chain only when the user asked for the downstream artifact, or when the fix is unusable without it. Otherwise stop at the diagnosis and offer the chain in one line. The response-size table below outranks this row.
@@ -418,3 +424,13 @@ The good version names a camera behavior and forbids the rest, gives one primary
 - If a style lens was named, would a reader be able to tell which one from the output alone?
 - Does the output stay clear of any specific shot, line, character, or plot beat from a real film?
 - Is the output proportional to what was asked?
+
+
+## Supplementary route: story development and short-drama structure
+
+The original directing pipeline, mode letters, output templates, and existing reference files remain authoritative and unchanged. This supplementary module fills the gap between an initial idea/script and the existing directing/previsualization pipeline. Use it only when the request needs story development, dialogue craft, episode/season design, or short-drama retention logic; do not load it for a straightforward shot prompt when those decisions are already locked.
+
+- Read **references/story-development-and-short-drama.md** for premise/theme, logline, character inner conflict, scene turns, dialogue subtext, series architecture, vertical short-drama hooks, and AI-production decision ownership.
+- Existing shot planning, blocking, cinematography, keyframes, video prompts, sound, continuity, editing, model adapters, and QC remain in their existing files. Do not duplicate or replace them with this module.
+- If the user supplies an approved script, timing, dialogue, shot order, or template, treat it as locked. Diagnose or optimize only the requested scope; never silently rewrite user-approved material.
+- When the user asks for a prompt rather than a development report, deliver the prompt itself. Internal story analysis is a means to the requested artifact, not a reason to substitute a long planning document.
